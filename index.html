@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://kit.fontawesome.com/2faac220b5.js" crossorigin="anonymous"></script>
+  <title>Music Player</title>
+</head>
+
+<body>
+
+  <!-- Bottom Player Section -->
+
+  <section class="songs-player">
+    <div class="player-content">
+      <div class="current-song">
+        <div class="current-song-img">
+          <img src="/assets/images/aur-pyaar-karna-hai-500-500.jpg" alt="aur-pyaar-karna-hai-img">
+        </div>
+        <div class="current-song-detail">
+          <p class="song-name">Aur Pyaar</p>
+          <p class="current-singer">Guru Randhawa</p>
+        </div>
+        <div class="current-icons">
+          <a href="#">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-heart-crack"></i>
+          </a>
+        </div>
+      </div>
+      <div class="player-controls">
+        <div class="controls">
+          <a class="hide" href="#">
+            <i class="fa-solid fa-shuffle"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-backward-step"></i>
+          </a>
+          <a href="#">
+            <i class="fa-2x fa-solid fa-play"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-forward-step"></i>
+          </a>
+          <a class="hide" href="#">
+            <i class="fa-solid fa-repeat"></i>
+          </a>
+        </div>
+        <div class="seek-control">
+          <span>00:05</span>
+          <input class="song-seek" type="range">
+          <span>03:00</span>
+        </div>
+      </div>
+      <div class="volume-controls">
+        <a href="#">
+          <i class="fa-solid fa-headphones-simple"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-podcast"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-volume-high"></i>
+        </a>
+        <input class="volume-seek" type="range">
+        <a href="#">
+          <i class="fa-solid fa-maximize"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Navbar Section -->
+
+  <section class="nav-section" id="nav-section">
+    <div class="navbar">
+
+      <div class="left">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/assets/images/logo.PNG" alt="logo-img">
+          </a>
+        </div>
+        <div class="link-item">
+          <a href="#">Favorites</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="input">
+          <input type="text" placeholder="Search">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+          <a href="#"><i class="fa-solid fa-microphone"></i></a>
+
+        </div>
+
+        <div class="bell">
+          <a href="#">
+            <i class="fa-solid fa-bell"></i>
+          </a>
+          <div class="dot"></div>
+        </div>
+        <div class="profile">
+          <a href="#">
+            <img src="/assets/images/profile-pic.jpg" alt="user-image">
+          </a>
+        </div>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <!-- <div class="hamburger-menu">
+                <div id="menuToggler">
+                    
+                </div>
+            </div> -->
+
+
+    </div>
+  </section>
+
+  <!-- Bottom Section -->
+
+  <section class="bottom-section">
+
+    <!-- Content Wrapper -->
+    <section class="wrapper">
+      <!-- Music Area Wrapper -->
+      <section class="music-area">
+        <div class="corousel">
+          <div class="corousel-item">
+            <img src="/assets/images/aur-pyaar-karna-hai-500-500.jpg" alt="image1">
+          </div>
+          <div class="corousel-item">
+            <img src="/assets/images/baarish-ki-jaaye-500-500.jpg" alt="image2">
+          </div>
+          <div class="corousel-item">
+            <img src="/assets/images/dil-galti-kar-baitha-hai-feat.-mouni-roy-2021-500-500.jpg" alt="image3">
+          </div>
+          <div class="corousel-item">
+            <img src="/assets/images/aur-pyaar-karna-hai-500-500.jpg" alt="image1">
+          </div>
+          <div class="corousel-item">
+            <img src="/assets/images/baarish-ki-jaaye-500-500.jpg" alt="image2">
+          </div>
+          <div class="corousel-item">
+            <img src="/assets/images/dil-galti-kar-baitha-hai-feat.-mouni-roy-2021-500-500.jpg" alt="image3">
+          </div>
+        </div>
+      </section>
+      <!-- Latest Release Area -->
+      <section class="latest-release">
+
+        <div class="latest-release-heading">
+          <h2>Latest Release</h2>
+        </div>
+
+        <div class="latest-release-container">
+          <div class="latest-release-item">
+            <div class="latest-release-image">
+              <img src="/assets/images/Toofan-KGF-Chapter-2-500-500.jpg" alt="image">
+            </div>
+
+            <div class="latest-release-content">
+              <div class="latest-release-eft">
+                <p class="song-name">Toofan</p>
+                <p class="song-date">MAR 25, 2022</p>
+              </div>
+              <div class="latest-release-right">
+                <a href="" class="optionbtn">...</a>
+                <p class="song-time">4.44</p>
+              </div>
+            </div>
+          </div>
+          <div class="latest-release-item">
+            <div class="latest-release-image">
+              <img src="/assets/images/aur-pyaar-karna-hai-500-500.jpg" alt="image">
+            </div>
+
+            <div class="latest-release-content">
+              <div class="latest-release-left">
+                <p class="song-name">Aur Pyaar</p>
+                <p class="song-date">MAR 25, 2022</p>
+              </div>
+              <div class="latest-release-right">
+                <a href="" class="optionbtn">...</a>
+                <p class="song-time">4.44</p>
+              </div>
+            </div>
+          </div>
+          <div class="latest-release-item">
+            <div class="latest-release-image">
+              <img src="/assets/images/baarish-ki-jaaye-500-500.jpg" alt="image">
+            </div>
+
+            <div class="latest-release-content">
+              <div class="latest-release-left">
+                <p class="song-name">Baarish</p>
+                <p class="song-date">MAR 25, 2022</p>
+              </div>
+              <div class="latest-release-right">
+                <a href="" class="optionbtn">...</a>
+                <p class="song-time">4.44</p>
+              </div>
+            </div>
+          </div>
+          <div class="latest-release-item">
+            <div class="latest-release-image">
+              <img src="/assets/images/Bedardi-Se-Pyaar-Ka-Jubin-Nautiyal-500-500.jpg" alt="image">
+            </div>
+
+            <div class="latest-release-content">
+              <div class="latest-release-left">
+                <p class="song-name">Bedardi Se</p>
+                <p class="song-date">MAR 25, 2022</p>
+              </div>
+              <div class="latest-release-right">
+                <a href="" class="optionbtn">...</a>
+                <p class="song-time">4.44</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Artist Area -->
+
+      <section class="popular-artists">
+        <div class="popular-artists-heading">
+          <h2>Popular Artists</h2>
+        </div>
+        <div class="artist-img-container">
+          <div class="artist-image">
+            <a href="single-playlist-page.html">
+              <img src="/assets/images/ed-sheeran.jpg" alt="ed-sheeran-img">
+            </a>
+
+            <figcaption>Ed Sheeran</figcaption>
+          </div>
+          <div class="artist-image">
+            <a href="single-playlist-page.html">
+              <img src="/assets/images/cold-play.jpg" alt="cold-play-img">
+            </a>
+            <figcaption>ColdPlay</figcaption>
+          </div>
+          <div class="artist-image">
+            <a href="single-playlist-page.html">
+              <img src="/assets/images/zayn-malik.jpg" alt="zayn-img">
+            </a>
+            <figcaption>Zayn Malik</figcaption>
+          </div>
+          <div class="artist-image">
+            <a href="single-playlist-page.html">
+              <img src="/assets/images/charlie-puth.webp" alt="charlie-puth-img">
+            </a>
+            <figcaption>Charlie Puth</figcaption>
+          </div>
+          <div class="artist-image">
+            <img src="/assets/images/imagine-dragons.jpg" alt="imagine-dragons-img">
+            <figcaption>Imagine Dragons</figcaption>
+          </div>
+          <div class="artist-image">
+            <img src="/assets/images/bruno-mars.jpg" alt="bruno-mars-img">
+            <figcaption>Bruno Mars</figcaption>
+          </div>
+        </div>
+
+        <!-- Stations Area -->
+
+        <div class="stations">
+          <div class="station-icon">
+            <img src="/assets/images/stations.PNG" alt="stations-icon">
+          </div>
+          <div class="music-categories">
+            <div class="love-music">
+              <img src="/assets/images/love-image.PNG" alt="love-img">
+              <p class="music-text">Love</p>
+            </div>
+            <div class="retro-music">
+              <img src="/assets/images/retro-img.webp" alt="retro-img">
+              <p class="music-text">Retro</p>
+            </div>
+            <div class="chill-music">
+              <img src="/assets/images/chill-image.jpg" alt="chill-img">
+              <p class="music-text">Chill</p>
+            </div>
+            <div class="workout-music">
+              <img src="/assets/images/workout-image.jpg" alt="workout-img">
+              <p class="music-text">Workout</p>
+            </div>
+            <div class="rock-music">
+              <img src="/assets/images/rock-image.jpg" alt="rock-img">
+              <p class="music-text">Rock</p>
+            </div>
+            <div class="pop-music">
+              <img src="/assets/images/pop-image.jpg" alt="pop-img">
+              <p class="music-text">Pop</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Music Category Cards Area -->
+
+        <div class="music-category-cards">
+          <div class="music-category-card">
+            <img class="music-category-img" src="/assets/images/party-card-img.jpg" alt="party-card-img">
+            <p class="music-category-card-text">Party</p>
+          </div>
+          <div class="music-category-card">
+            <img src="/assets/images/electronic-card-img.jpg" alt="electronic-card-img">
+            <p class="music-category-card-text">Electronic</p>
+          </div>
+          <div class="music-category-card">
+            <img src="/assets/images/roadtrip-card-img.webp" alt="roadtrip-card-img">
+            <p class="music-category-card-text">Roadtrip</p>
+          </div>
+        </div>
+
+        <!-- Latest English Songs Wrapper -->
+
+        <div class="latest-english">
+          <div class="latest-english-heading">
+            <h2>Latest English</h2>
+          </div>
+          <div class="latest-english-cards">
+            <div class="latest-english-card">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="bepanah-pyaar-img">
+              <p class="latest-english-text">
+                Bepanah Pyaar
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="bepanah-pyaar-img">
+              <p class="latest-english-text">
+                Bepanah Pyaar
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/barsaat-ki-dhun-2021-500-500.jpg" alt="barsaat-ki-dhun-img">
+              <p class="latest-english-text">
+                Barsaat Ki Dhun
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/dil-lauta-do-2021-500-500.jpg" alt="dil-lauta-do-img">
+              <p class="latest-english-text">
+                Dil Lauta Do
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/Bedardi-Se-Pyaar-Ka-Jubin-Nautiyal-500-500.jpg" alt="bedardi-se-img">
+              <p class="latest-english-text">
+                Bedardi Se
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/doob-gaye-2021-500-500.jpg" alt="doob-gye-img">
+              <p class="latest-english-text">
+                Doob Gaye
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/filhaal2-mohabbat-2021-500-500.jpg" alt="filhaal2-img">
+              <p class="latest-english-text">
+                Filhaal 2
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest Hindi Songs Wrapper -->
+
+        <div class="latest-hindi">
+          <div class="latest-hindi-heading">
+            <h2>Latest Hindi</h2>
+          </div>
+          <div class="latest-english-cards">
+            <div class="latest-english-card">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="bepanah-pyaar-img">
+              <p class="latest-english-text">
+                Bepanah Pyaar
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="bepanah-pyaar-img">
+              <p class="latest-english-text">
+                Bepanah Pyaar
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/barsaat-ki-dhun-2021-500-500.jpg" alt="barsaat-ki-dhun-img">
+              <p class="latest-english-text">
+                Barsaat Ki Dhun
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/dil-lauta-do-2021-500-500.jpg" alt="dil-lauta-do-img">
+              <p class="latest-english-text">
+                Dil Lauta Do
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/Bedardi-Se-Pyaar-Ka-Jubin-Nautiyal-500-500.jpg" alt="bedardi-se-img">
+              <p class="latest-english-text">
+                Bedardi Se
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/doob-gaye-2021-500-500.jpg" alt="doob-gye-img">
+              <p class="latest-english-text">
+                Doob Gaye
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+            </div>
+            <div class="latest-english-card">
+              <img src="/assets/images/filhaal2-mohabbat-2021-500-500.jpg" alt="filhaal2-img">
+              <p class="latest-english-text">
+                Filhaal 2
+              </p>
+              <p class="latest-english-small-text">MAR 27, 2022</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Songs Que Area Right -->
+
+    <section class="que-area">
+      <div class="que-heading">
+        <h2>Queue</h2>
+        <div class="que-button">
+          <a href="#">Queue &nbsp; &#709;</a>
+        </div>
+      </div>
+      <div class="music-list">
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">01</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/aur-pyaar-karna-hai-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Aur Pyaar</p>
+              <p class="singer">Neha Kakkar</p>
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">02</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/baarish-ban-jaana-2021-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Baarish Ban Jaana</p>
+              <p class="singer">Payal Dev</p>
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">03</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/barsaat-ki-dhun-2021-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Barsaat Ki Dhun</p>
+              <p class="singer">Jubin Notiyal</p>
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">04</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/Bedardi-Se-Pyaar-Ka-Jubin-Nautiyal-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bedardi Se Pyaar</p>
+              <p class="singer">Jubin Notiyal</p>
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="music-card">
+          <div class="music-card-left">
+            <div class="song-serial">
+              <p class="song-serial-no">05</p>
+            </div>
+            <div class="song-pic">
+              <img src="/assets/images/bepanah-pyaar-500-500.jpg" alt="song-img">
+            </div>
+            <div class="song-detail">
+              <p class="song-name">Bepanah Pyaar</p>
+              <p class="singer">Payal Dev</p>
+
+            </div>
+          </div>
+
+          <div class="music-card-right">
+            <a href="#" class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+</html>
